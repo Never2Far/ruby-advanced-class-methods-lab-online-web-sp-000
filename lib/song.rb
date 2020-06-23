@@ -37,8 +37,8 @@ end
 
 def self.find_or_create_by_name(name)
 find_by_name(name) == nil ? create_by_name(name) : @@all[name]
-  
-find_by_name(name) != nil ||= 
+
+find_by_name(name) != nil ||=
 end
 
 def self.alphabetical
