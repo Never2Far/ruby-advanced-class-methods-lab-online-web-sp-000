@@ -11,6 +11,7 @@ class Song
   end
 
   def self.create
+<<<<<<< HEAD
     self.new
     self.save
   end
@@ -48,5 +49,13 @@ end
 def self.destroy_all
   @@all.clear
 end
+=======
+    @@all << self.new
+  end
+
+  def self.new_by_name(name)
+
+  end
+>>>>>>> 515da00fc66472eb77fbe795bc71a4641c40b7ca
 
 end
