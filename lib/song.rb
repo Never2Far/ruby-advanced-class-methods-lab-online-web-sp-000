@@ -44,14 +44,14 @@ end
 end
 
 def self.alphabetical
-  @@all.sort{|song1, song2|
-    song1.name <=> song2.name
-  }
-
+  @@all.sort_by{|song| song.name}
 end
 
 def self.new_from_filename(filename)
-
+  
+  split_filename = filename.split(" - ")
+  title = File.basename(split_filename[1], ".mp3")
+  artist = split_filename[0]
 end
 
 def self.create_from_filename(filename)
