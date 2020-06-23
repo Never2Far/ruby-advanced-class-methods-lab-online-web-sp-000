@@ -52,8 +52,8 @@ def self.new_from_filename(filename)
   split_filename = filename.split(" - ")
   title = File.basename(split_filename[1], ".mp3")
   new_by_name(title)
-  title.artist_name = split_filename[0]
-  self
+  self.artist_name = split_filename[0]
+  return self
 end
 
 def self.create_from_filename(filename)
