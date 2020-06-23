@@ -48,7 +48,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename(filename)
-  
+
   split_filename = filename.split(" - ")
   title = File.basename(split_filename[1], ".mp3")
   artist = split_filename[0]
