@@ -23,8 +23,7 @@ class Song
   end
 
 def self.create_by_name(name)
-  new_song = self.new
-  new_song.name = name
+  new_song = new_by_name(name)
   new_song.save
   return new_song
 end
@@ -56,7 +55,7 @@ def self.new_from_filename(filename)
 end
 
 def self.create_from_filename(filename)
-
+new_from_filename(filename)
 end
 
 def self.destroy_all
