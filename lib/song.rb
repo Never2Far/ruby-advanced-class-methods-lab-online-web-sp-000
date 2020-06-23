@@ -49,9 +49,4 @@ def self.destroy_all
   @@all.clear
 end
 
-    @@all << self.new
-  end
-
-  def self.new_by_name(name)
-
-  end
+end
